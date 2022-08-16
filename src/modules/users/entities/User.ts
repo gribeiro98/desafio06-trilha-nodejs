@@ -21,7 +21,7 @@ export class User {
   @Column()
   last_name: string;
 
-  @Column()
+  @Column() 
   email: string;
 
   @ManyToMany(() => Game, (game) => game.users)
